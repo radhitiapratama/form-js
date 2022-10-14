@@ -1,2 +1,2 @@
 # form-js
-https://radhitiapratama.github.io/form-js
+radhitiapratama.github.io/form-js
