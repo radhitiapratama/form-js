@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  flex-direction: column;
+  transition: 0.3s;
+}
+form {
+  width: 500px;
+  color: rgba(0, 0, 0);
+  background: rgba(255, 255, 255);
+  border-radius: 12px;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 24px 20px;
+  gap: 50px;
+  position: relative;
+}
+.input-group {
+  width: 80%;
+  height: 42px;
+  position: relative;
+}
+.input-group span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #eb6424;
+  transition: 0.5s;
+}
+.input-group input {
+  width: 100%;
+  height: 100%;
+  padding: 15px 5px;
+  border: none;
+  background: rgba(255, 255, 255, 0.5);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+.input-group input:focus ~ span {
+  width: 100%;
+}
+::placeholder {
+  color: rgba(0, 0, 0);
+}
+form .account {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+form .btn {
+  width: 90%;
+  height: 52px;
+  border-radius: 8px;
+  border: none;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #1f7a8c;
+  transition: 0.3s;
+}
+form .account a {
+  color: rgba(0, 0, 0);
+  text-decoration: none;
+  font-size: 12px;
+}
+form .color-group {
+  width: 150px;
+  height: 42px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.color-group .color {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.color-group .color:nth-child(1) {
+  background-color: #1b2a41;
+}
+.color-group .color:nth-child(2) {
+  background-color: #db222a;
+}
+.color-group .color:nth-child(3) {
+  background-color: #1f7a8c;
+}
+.color-group .color:nth-child(4) {
+  background-color: #f0efeb;
+}
+.active {
+  border: 1px solid rgb(0, 0, 0);
+  transform: scale(1.2);
+}
+.username,
+.password {
+  opacity: 0;
+  transform: scale(0);
+}
+.notifUser,
+.notifPassword {
+  font-size: 12px;
+  color: #db222a;
+  font-style: italic;
+  margin-top: 5px;
+}
+@media screen and (max-width: 420px) {
+  form {
+    width: 320px;
+  }
+  form .color-group {
+    width: 90px;
+  }
+}

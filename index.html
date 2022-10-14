@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <p class="username">testing</p>
+    <p class="password">12345678</p>
+    <form action="">
+      <div class="text">
+        <h2>Login</h2>
+      </div>
+      <div class="input-group">
+        <input type="text" placeholder="Username" class="usernameInput" />
+        <p class="notifUser"></p>
+        <span></span>
+      </div>
+      <div class="input-group">
+        <input
+          type="text"
+          placeholder="Password"
+          class="passwordInput"
+          maxlength="8"
+        />
+        <p class="notifPassword"></p>
+        <span></span>
+      </div>
+      <div class="account">
+        <a href="#">Lupa Password ?</a>
+        <a href="#">Buat akun baru</a>
+      </div>
+      <button class="btn">Login</button>
+      <div class="color-group">
+        <span class="color active" value="#1b2a41"></span>
+        <span class="color" value="#db222a"></span>
+        <span class="color" value="#1f7a8c"></span>
+      </div>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
